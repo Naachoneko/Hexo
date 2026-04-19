@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://naachoneko.github.io/2026/03/20/deploy-your-blog-site/"/>
+    <link rel="canonical" href="https://naachoneko.github.io/2026/04/19/最大全一子矩阵/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -87,15 +87,16 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何使用Hexo从零开始搭建属于自己的博客">
-<meta property="og:url" content="https://naachoneko.github.io/2026/03/20/deploy-your-blog-site/index.html">
+<meta property="og:title" content="最大全一子矩阵————逆向遍历">
+<meta property="og:url" content="https://naachoneko.github.io/2026/04/19/%E6%9C%80%E5%A4%A7%E5%85%A8%E4%B8%80%E5%AD%90%E7%9F%A9%E9%98%B5/index.html">
 <meta property="og:site_name" content="Welcome">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://naachoneko.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2026-03-20T02:53:55.000Z">
-<meta property="article:modified_time" content="2026-04-19T06:50:26.219Z">
+<meta property="article:published_time" content="2026-04-19T07:50:33.000Z">
+<meta property="article:modified_time" content="2026-04-19T07:50:33.082Z">
 <meta property="article:author" content="HUST_Nacho">
+<meta property="article:tag" content="-算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://naachoneko.github.io/images/redefine-og.webp">
     
@@ -109,7 +110,7 @@
     
     <title>
         
-            如何使用Hexo从零开始搭建属于自己的博客 | HUST_Nacho
+            最大全一子矩阵————逆向遍历 | HUST_Nacho
         
     </title>
 
@@ -299,10 +300,10 @@
 			
 			
 			
-			<img src="/Hexo/images/bg-post1.jpg" alt="如何使用Hexo从零开始搭建属于自己的博客" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			<img src="/Hexo/images/bg2.jpg" alt="最大全一子矩阵————逆向遍历" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
 			
 			<div class="w-full flex items-center absolute bottom-0 justify-start">
-				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">如何使用Hexo从零开始搭建属于自己的博客</h1>
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">最大全一子矩阵————逆向遍历</h1>
 			</div>
 			
 		</div>
@@ -323,20 +324,31 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2026-03-20 10:53:55</span>
-        <span class="mobile">2026-03-20 10:53:55</span>
+        <span class="desktop">2026-04-19 15:50:33</span>
+        <span class="mobile">2026-04-19 15:50:33</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-04-19 14:50:26</span>
-            <span class="mobile">2026-04-19 14:50:26</span>
+            <span class="desktop">2026-04-19 15:50:33</span>
+            <span class="mobile">2026-04-19 15:50:33</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/Hexo/tags/%E7%AE%97%E6%B3%95/">-算法</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -358,81 +370,48 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本文仅为博客萌新个人技术记录，对于一些诡异的情况不一定考虑周全</p>
-<p>如阅读中途遇到任何问题请勤翻<strong>官方文档</strong>或者使用<strong>大模型</strong></p>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
-<li><strong>Hexo</strong></li>
-<li><strong>git</strong></li>
-<li><strong>Node.js</strong></li>
-</ul>
-<p>具体安装步骤请参考<a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85" >Hexo安装<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<p>注意，文档中所有的命令全部在命令提示符（Windows cmd）中完成</p>
-<blockquote>
-<p>如果你不会打开cmd的话……先别搭博客了</p>
-</blockquote>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>如果你已经按照文档完成上述组件的安装，只需要依次输入三行命令：</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></div>
-<p>第一行命令会在C盘根目录下初始化你的博客文件夹，请把<code>&lt;folder&gt;</code>整体替换为你想创建的文件夹名字，比如输入<code>hexo init myblog</code>,那么系统会创建一个名为”myblog”的文件夹</p>
-<p>第二行<code>cd &lt;folder&gt;</code>将操作目录转到你创建的博客文件夹的根目录，请务必保证你填写的文件夹名与第一行中的一致</p>
-<p>第三行命令会在你的博客文件夹中下载配置文件</p>
-<blockquote>
-<p>本人起初比较愚笨，不熟悉cmd的用法，直接在E盘新建空文件夹，结果路径定位不到，在这一步就卡了一会。</p>
-<p>所以请不要把文件夹丢到别的盘里面，直接在C盘创建多省事</p>
-</blockquote>
-<h2 id="链接VScode"><a href="#链接VScode" class="headerlink" title="链接VScode"></a>链接VScode</h2><p>如果有需要的话，直接把根目录下的文件拖到VScode里面，代码管理起来更方便</p>
-<p>使用过VScode的同学肯定比较熟悉</p>
-<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>首先你需要有一个github账号（没有就注册一个，非常简单）</p>
-<p>接下来，在github页面打开自己的主页（profile），点击<strong>repository</strong>，在这里可以新建一个<strong>仓库</strong>，起一个名字（我的是Hexo）并将可见性调为<strong>public</strong>（请务必这么做），于是你就有一个自己的代码仓库了，可以将你的博客文件部署到此处</p>
-<p>接下来的部署操作参考<a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages#%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2" >github一键部署<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<p>你应该会用到博客文件夹根目录下的<code>_config.yml</code>文件，不断下翻到底部，找到<code>deploy:</code>字样并按如下格式填写：</p>
-<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;repository&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></div>
-<p>其中<code>&lt;username&gt;</code>是你的github用户名，<code>&lt;repository&gt;</code>是你刚刚创建的仓库名，下文中意义同上</p>
-<p>接下来在文件顶部能够找到<code>url: http://example.com</code>字样，请按如下格式改写：</p>
-<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://&lt;username&gt;.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/&lt;repository&gt;/</span></span><br></pre></td></tr></table></figure></div>
-
-
-<p>接下来运行命令：</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-
-<p>现在打开你的仓库：<code>https://github.com/&lt;username&gt;/&lt;repository&gt;</code></p>
-<p>点击上方的 Settings → 左侧菜单选择 Pages</p>
-<p>在 Branch 部分，确认：</p>
-<ul>
-<li><p>Source 选择为 Deploy from a branch</p>
-</li>
-<li><p>Branch 选择 master，文件夹选择 &#x2F; (root)</p>
-</li>
-<li><p>点击 Save（如果已设置好，此处可能没有保存按钮）</p>
-</li>
-</ul>
-<p> 稍等片刻，页面顶部会出现提示：</p>
-<pre><code>Your site is published at https://github.com/&lt;username&gt;/&lt;repository&gt;
+			<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>天才少年HWB扔给你一个仅由元素0和1构成的矩阵，现在他要求你在这个矩阵中找到一个只由元素1构成的子矩阵，且这个子矩阵的元素个数是<strong>最多的</strong>。他承诺如果你能在<strong>最短的时间</strong>内找到这个矩阵，他就会在下个星期四<strong>请你吃KFC</strong>。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入共$m+n+1$行。</p>
+<p>第一行输入两个整数$m、n$，表示矩阵的行数和列数。</p>
+<p>接下来$m$行，每行包含$n$个正整数（0或1），表示矩阵中每个位置的元素。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出一个正整数，表示最大子矩阵的元素个数</p>
+<h2 id="样例-1-输入"><a href="#样例-1-输入" class="headerlink" title="样例 1 输入"></a>样例 1 输入</h2><pre><code>4 5
+1 0 1 1 0
+0 1 1 1 1
+0 0 0 1 1
+0 0 1 0 1
 </code></pre>
-<p>  如果出现这个提示，说明 Pages 已生效，但可能需要等几分钟才能访问</p>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>由于主题配置文件为空，刚部署的博客页面可能会以markdown文本格式展现，而没有相应的炫酷主题，所以你需要先在<a class="link"   target="_blank" rel="noopener" href="https://hexo.io/themes/" >Hexo主题网站<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载一个你喜欢的主题，按照主题作者的github文档进行配置（不同主题的配置方式可能不同，以我下载的<strong>redefine</strong>主题为例）</p>
-<p>安装主题后务必用以下命令安装Hexo主题渲染器（渲染某些主题需要特定的依赖）：</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-renderer-pug hexo-renderer-stylus</span><br></pre></td></tr></table></figure></div>
+<h2 id="样例-1-输出"><a href="#样例-1-输出" class="headerlink" title="样例 1 输出"></a>样例 1 输出</h2><pre><code>4
+</code></pre>
+<h2 id="样例-2-输入"><a href="#样例-2-输入" class="headerlink" title="样例 2 输入"></a>样例 2 输入</h2><pre><code>5 8
+1 0 1 0 0 1 1 0
+0 0 1 1 1 1 0 0
+1 1 1 0 1 1 1 1
+0 1 1 1 1 1 1 1
+0 0 1 0 0 1 1 0
+</code></pre>
+<h2 id="样例-2-输出"><a href="#样例-2-输出" class="headerlink" title="样例 2 输出"></a>样例 2 输出</h2><pre><code>8
+</code></pre>
+<h2 id="数据保证"><a href="#数据保证" class="headerlink" title="数据保证"></a>数据保证</h2><p>对于100%的测试数据，保证$0&lt;m,n\le5000$。</p>
+<h2 id="参考思路"><a href="#参考思路" class="headerlink" title="参考思路"></a>参考思路</h2><p>要在大矩阵里面找全一子矩阵，很容易想到去找”连续的1“，但是直接对每一个元素的右测和下方暴力查找一定会超时。</p>
+<p>我们的天才少年HWB给出了他的想法：找到每一行从元素$(i,j)$开始的”连续的1“的个数，并存入数组$mark$的$(i,j)$的位置，例如，对于样例1，数组$mark$应该是：</p>
+<pre><code>1 0 2 1 0
+0 4 3 2 1
+0 0 0 2 1
+0 0 1 0 1
+</code></pre>
+<p>这样就很好的表示了“连续的1”的位置和长度</p>
+<p>那么如何构建$mark$数组呢？如果直接从左往右遍历，对每个元素都要单独查找它右侧的所有元素，那么时间复杂度是$O(n^3)$的，必然超时。那么我们不妨思考：既然每个位置”连续的1“的个数都取决于它右边的”连续的1“的个数，利用这个递推关系，直接从右往左遍历每一行，就能直接算出$mark$数组每个位置的值了，而且时间复杂度降为了$O(n^2)$。</p>
+<p>这个递推转化为代码就是：</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = n - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (a[i][j] == <span class="number">0</span>)</span><br><span class="line">            mark[i][j] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            mark[i][j] = mark[i][j + <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>一般来说，主题中需要自己配置的内容比较少，主要有以下内容：</p>
-<ul>
-<li>网站主标题（<strong>title</strong>）</li>
-<li>网站副标题（<strong>subtitle</strong>）</li>
-<li>博客作者（<strong>author</strong>）</li>
-<li>头像（<strong>avatar</strong>）和背景图（<strong>image</strong>）</li>
-</ul>
-<p>以redefine为例，我自己的配置代码如下：</p>
-<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">info:</span></span><br><span class="line">  <span class="comment"># Site title</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">HUST_Nacho</span></span><br><span class="line">  <span class="comment"># Site subtitle</span></span><br><span class="line">  <span class="attr">subtitle:</span> <span class="string">My</span> <span class="string">footprint</span></span><br><span class="line">  <span class="comment"># Author name</span></span><br><span class="line">  <span class="attr">author:</span> <span class="string">HUST_Nacho</span></span><br><span class="line">  <span class="comment"># Site URL</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://naachoneko.github.io/Hexo/</span></span><br></pre></td></tr></table></figure></div>
-<p>关于头像&amp;背景图设置，只需把头像&amp;背景图文件移动至<code>myblog/themes/redefine/source/images</code>文件夹中即可，并按如下格式引用:</p>
-<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">defaults:</span></span><br><span class="line">  <span class="comment"># Favicon</span></span><br><span class="line">  <span class="attr">favicon:</span> <span class="string">/images/nacho.png</span></span><br><span class="line">  <span class="comment"># Site logo</span></span><br><span class="line">  <span class="attr">logo:</span> </span><br><span class="line">  <span class="comment"># Site avatar</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">/images/nacho.png</span></span><br></pre></td></tr></table></figure></div>
-<p>背景图的配置方式各有千秋，需要参考你下载的主题的配置教学文档，redefine的背景图配置很简单，分为浅色深色两种背景图，不过我图方便就用同一张：</p>
-<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_banner:</span></span><br><span class="line">  <span class="comment"># Whether to enable home banner</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># style of home banner</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">fixed</span> <span class="comment"># static or fixed</span></span><br><span class="line">  <span class="comment"># Home banner image</span></span><br><span class="line">  <span class="attr">image:</span> </span><br><span class="line">    <span class="attr">light:</span> <span class="string">/images/weihua.webp</span> <span class="comment"># light mode</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">/images/weihua.webp</span> <span class="comment"># dark mode</span></span><br></pre></td></tr></table></figure></div>
-<p>最后就是主题标题，基本上大部分主题都会有问候标题，我的配置如下：</p>
-<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_banner:</span></span><br><span class="line">  <span class="comment"># Home banner title</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Welcome</span></span><br><span class="line">  <span class="comment"># Home banner subtitle</span></span><br><span class="line">  <span class="attr">subtitle:</span></span><br><span class="line">    <span class="attr">text:</span> [<span class="string">&quot;Feel free to visit!&quot;</span>,<span class="string">&quot;Sit down for a cup of tea!&quot;</span>] <span class="comment"># subtitle text, array</span></span><br></pre></td></tr></table></figure></div>
-<p>配置好主题文件后，使用<code>hexo clean &amp; hexo deploy</code>即可部署</p>
-<h2 id="新的开始"><a href="#新的开始" class="headerlink" title="新的开始"></a>新的开始</h2><p>使用hexo创建和发布文章十分简单，使用<code>hexo new draft &quot;&lt;title&gt;&quot;</code>创建新的草稿，在<code>source/_drafts</code>文件夹内会看到自己的草稿。</p>
-<p>编辑完草稿后使用<code>hexo public draft &quot;&lt;title&gt;&quot;</code>发布你的文章</p>
-<p>现在的你应该拥有自己漂亮的博客网站了，开启你的写作之旅吧！</p>
+<p>构建完$mark$数组以后，我们还要遍历每一列，从而找到连续的不为零的$mark(i,j)$,并且记录这个长度$count$,最大子矩阵的元素个数就是$count*min{mark(i,j)}$，将每一行进行综合就能得到答案。</p>
+<p>你先别急还有第二关，如果依旧从上往下遍历每一列，仍要对每一个元素遍历它下面的所有元素才能找到最大的$min{mark(i,j)}$，最终时间复杂度仍是$O(n^3)$。</p>
+<p>那我们还是可以尝试从下往上遍历，当$mark(i,j)&#x3D;0$时重置$count$，否则不断更新$count*min{mark(i,j)}$，直到找到更大的子矩阵。代码实现如下：</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">0</span>, colmin = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = m - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (mark[i][j] == <span class="number">0</span>)</span><br><span class="line">            count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            count++;</span><br><span class="line">            <span class="keyword">if</span> (mark[i][j] &lt; colmin)</span><br><span class="line">                colmin = mark[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> area = count * colmin;</span><br><span class="line">        <span class="keyword">if</span> (area &gt; maxarea)</span><br><span class="line">            maxarea = area;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>可以看出，优化后算法的时间复杂度是$O(n^2)$的，为何改变了遍历顺序之后差距如此之大?读者可以自行体会。</p>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> SIZE = <span class="number">5050</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> a[SIZE][SIZE] = &#123;<span class="number">0</span>&#125;, mark[SIZE][SIZE] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="type">int</span> m, n, maxarea = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin &gt;&gt; m &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; j++)</span><br><span class="line">            cin &gt;&gt; a[i][j];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = n - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] == <span class="number">0</span>)</span><br><span class="line">                mark[i][j] = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                mark[i][j] = mark[i][j + <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> count = <span class="number">0</span>, colmin = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = m - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (mark[i][j] == <span class="number">0</span>)</span><br><span class="line">                count = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                count++;</span><br><span class="line">                <span class="keyword">if</span> (mark[i][j] &lt; colmin)</span><br><span class="line">                    colmin = mark[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="type">int</span> area = count * colmin;</span><br><span class="line">            <span class="keyword">if</span> (area &gt; maxarea)</span><br><span class="line">                maxarea = area;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; maxarea &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 		</div>
 
@@ -440,18 +419,18 @@
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 如何使用Hexo从零开始搭建属于自己的博客</li>
+        <li><strong>标题:</strong> 最大全一子矩阵————逆向遍历</li>
         <li><strong>作者:</strong> HUST_Nacho</li>
         <li><strong>创建于
-                :</strong> 2026-03-20 10:53:55</li>
+                :</strong> 2026-04-19 15:50:33</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2026-04-19 14:50:26
+                    :</strong> 2026-04-19 15:50:33
             </li>
         
         <li>
-            <strong>链接:</strong> https://naachoneko.github.io/Hexo/2026/03/20/deploy-your-blog-site/
+            <strong>链接:</strong> https://naachoneko.github.io/Hexo/2026/04/19/最大全一子矩阵/
         </li>
         <li>
             <strong>
@@ -470,24 +449,32 @@
 		
 
 		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/Hexo/tags/%E7%AE%97%E6%B3%95/">#-算法</a>&nbsp;
+			</li>
+			
+		</ul>
+		
 
 		
 
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/Hexo/2026/03/23/ai-and-me/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/Hexo/2026/03/23/ai-and-me/">
 					<span class="title flex justify-center items-center">
 						<span class="post-nav-title-item truncate max-w-48">从“历史为何遥远”到“不完美的奇迹”：一次与AI的对话记录</span>
-						<span class="post-nav-item">上一篇</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
 					</span>
 				</a>
 			</div>
-			
 			
 		</div>
 		
@@ -563,8 +550,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">如何使用Hexo从零开始搭建属于自己的博客</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-text">配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5VScode"><span class="nav-text">链接VScode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="nav-text">部署到github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98"><span class="nav-text">主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B"><span class="nav-text">新的开始</span></a></li></ol>
+		<div class="page-title">最大全一子矩阵————逆向遍历</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B-1-%E8%BE%93%E5%85%A5"><span class="nav-text">样例 1 输入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B-1-%E8%BE%93%E5%87%BA"><span class="nav-text">样例 1 输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B-2-%E8%BE%93%E5%85%A5"><span class="nav-text">样例 2 输入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B-2-%E8%BE%93%E5%87%BA"><span class="nav-text">样例 2 输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E4%BF%9D%E8%AF%81"><span class="nav-text">数据保证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%80%9D%E8%B7%AF"><span class="nav-text">参考思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81"><span class="nav-text">示例代码</span></a></li></ol>
 
 	</div>
 </div>
